@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main-cont">
+        <div class="result-box flex">
+            <p class="display">0</p>
+            <p class="input">0</p>
+        </div>
+    <div class="keypad flex">
+        <div class="operands flex">
+            <button type="button" class="btn digit" data-numb="1">1</button>
+            <button type="button" class="btn digit" data-numb="2">2</button>
+            <button type="button" class="btn digit" data-numb="3">3</button> <br>
+            <button type="button" class="btn digit" data-numb="4">4</button> 
+            <button type="button" class="btn digit" data-numb="5">5</button>
+            <button type="button" class="btn digit" data-numb="6">6</button> <br>
+            <button type="button" class="btn digit" data-numb="7">7</button>
+            <button type="button" class="btn digit" data-numb="8">8</button>
+            <button type="button" class="btn digit" data-numb="9">9</button> <br>
+            <button type="button" class="btn clear">&#8592;</button> 
+            <button type="button" class="btn digit" data-numb="0">0</button>
+            <button type="button" class="btn operate">&equals;</button> <br>
+        </div>
+        <div class="operators flex">
+            <button type="button" class="btn oper" data-oper="plus">&plus;</button>
+            <button type="button" class="btn oper" data-oper="minus">&minus;</button>
+            <button type="button" class="btn oper" data-oper="times">&times;</button>
+            <button type="button" class="btn oper" data-oper="divide">&divide;</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

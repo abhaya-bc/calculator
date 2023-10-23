@@ -1,0 +1,119 @@
+/* Initial styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99B0A7;
+}
+
+:root {
+    --bg-col: #10162F;
+    --digit-col: #ffff00;
+}
+
+.flex {
+    display: flex;
+}
+
+/* calculaor layout */
+
+.main-cont {
+    width: 350px;
+    /* height: 450px; */
+    border: 2px solid #7f8086;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #EBEEFF;
+}
+
+/* result box */
+
+.result-box {
+    width: 100%;
+    height: 65px;
+    background-color: var(--bg-col);
+    color: var(--digit-col);
+    padding: 6px 8px;
+    border-radius: 2px;
+    border: 2px dashed #EBEEFF;
+}
+
+.result-box.flex {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-box > * {
+    text-align: end;
+    font-size: 20px;
+}
+
+/* keypad */
+.keypad {
+    margin-top: 8px;
+    gap: 2px;
+}
+.operands {
+    width: 75%;
+}
+
+.operators {
+    width: 25%;
+}
+
+.keypad.flex > * {
+    flex: auto;
+}
+
+/* BUTTONS */
+.btn {
+    background-color: #A6C1FF;
+    color: #141010;
+    border: 2px solid #2F4858;
+    padding: 8px 1px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.btn.oper {
+    background-color: #B58485;
+}
+
+.btn:hover, .btn:focus {
+    outline: none;
+    background-color: #7fffd4;
+}
+
+.btn:active {
+    transform: scale(1.1, 1.1);
+}
+
+/* OPERANDS */
+.operands.flex {
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.btn.digit,
+.btn.clear,
+.btn.operate {
+    width: 30%;
+    flex: auto;
+}
+
+/* OPERATORS */
+
+.operators.flex {
+    flex-direction: column;
+    gap: 2px;
+}
